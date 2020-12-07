@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<div id="mainbox" onclick="openFunction()">&#9776;</div>
+  	<div id="menu" class="sidemenu">
+  		<a href="#">Home</a>
+  		<a href="#">About</a>
+  		<a href="#">Product</a>
+  		<a href="#">Login</a>
+  		<a href="#">Contact</a>
+  		<a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+  		
+  	</div>
+  	
+  	<script type="text/javascript">
+  		function openFunction(){
+  		document.getElementById("menu").style.width="300px";
+  		document.getElementById("mainbox").style.marginleft="300px";
+  	}
+  	function closeFunction(){
+  		document.getElementById("menu").style.width="0px";
+  		document.getElementById("mainbox").style.marginleft="0px";
+  	}
+  	</script>
+
+  </body>
+  </html>
